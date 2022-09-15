@@ -1,0 +1,7 @@
+https://www.sqltutorial.org/
+
+https://www.w3schools.com/sql/
+
+https://www.w3schools.in/mysql/ddl-dml-dcl
+
+https://learnsql.com/blog/what-is-with-clause-sql/
