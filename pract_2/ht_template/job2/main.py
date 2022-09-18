@@ -28,11 +28,7 @@ def main() -> flask_typing.ResponseReturnValue:
        "raw_dir": "/path/to/my_dir/raw/sales/2022-08-09"
      }
      """
-    input_data: dict = request.json
-    save_in_avro.avro(input_data['raw_dir'], input_data['stg_dir'])
-    return {
-               "message": "Data retrieved successfully from API",
-           }, 201
+# implement the slack response to save file in avro format
 
 
 if __name__ == "__main__":
