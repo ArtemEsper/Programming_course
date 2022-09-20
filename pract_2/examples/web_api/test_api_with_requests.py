@@ -1,15 +1,13 @@
 import os
 import requests
 
-
-AUTH_TOKEN = os.environ['AUTH_TOKEN']
+# AUTH_TOKEN = os.environ['AUTH_TOKEN']  # all keys mast be saved in environment variables and never exposed in the code
 
 
 def main():
-
     response = requests.get(
-        url='https://fake-api-vycpfa6oca-uc.a.run.app/sales?date=2022-08-09&page=2',
-        headers={'Authorization': AUTH_TOKEN}
+        url='http://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=astro&output=json'
+        # headers={'Authorization': AUTH_TOKEN}
     )
     print("Response status code:", response.status_code)
     print("Response JSON", response.json())
