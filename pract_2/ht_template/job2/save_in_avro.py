@@ -13,14 +13,45 @@ def avro(raw_dir, stg_dir):
 
     # use the following schema for the avro format
     schema = {
-        "namespace": "sales_2022-08-09.avro",
+        "namespace": "doi.avro",
         "type": "record",
-        "name": "store",
+        "name": "open citations",
         "fields": [
-            {"name": "client", "type": "string"},
-            {"name": "purchase_date", "type": "string"},
-            {"name": "product", "type": "string"},
-            {"name": "price", "type": "int"}
+            {
+                'default': None,
+                "name": "cited",
+                "type": "string"
+            },
+            {
+                'default': None,
+                "name": "author_sc",
+                "type": "string"
+            },
+            {
+                'default': None,
+                "name": "timespan",
+                "type": "string"
+            },
+            {
+                'default': None,
+                "name": "creation",
+                "type": ['null', {'logicalType': 'date', 'type': 'int'}]
+            },
+            {
+                'default': None,
+                "name": "citing",
+                "type": "string"
+            },
+            {
+                'default': None,
+                "name": "oci",
+                "type": "string"
+            },
+            {
+                'default': None,
+                "name": "journal_sc",
+                "type": "string"
+            }
         ]
     }
 
