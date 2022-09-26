@@ -24,7 +24,7 @@ def main() -> flask_typing.ResponseReturnValue:
         trigger business logic layer
         Proposed POST body in JSON:
         {
-          "doi: "10.1103/PhysRevLett.113.251301",
+          "stg_dir: "/path/to/my_dir/stg/doi/10.1103/PhysRevLett.113.251301",
           "raw_dir": "/path/to/my_dir/raw/doi/10.1103/PhysRevLett.113.251301"
         }
         """
